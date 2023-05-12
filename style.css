@@ -1,0 +1,50 @@
+html {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  padding: 2rem 1rem 1rem;
+  background-color: gold;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+button {
+  border: 0.15em solid black;
+  box-shadow: 2px 2px white;
+  font-size: 1.5rem;
+}
+
+main {
+  flex-grow: 2;
+  background-color: lightblue;
+
+  position: relative;
+}
+
+.counter {
+  font-size: 6rem;
+  font-weight: bold;
+  position: absolute;
+  inset: 30% 50%; /* nur 50% ist nicht in der Mitte vom main ... warum??*/
+}
+
+.bar {
+  background-color: gold;
+  height: 100%;
+  width: 1%;
+}
